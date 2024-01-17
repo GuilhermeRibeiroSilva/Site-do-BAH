@@ -53,7 +53,7 @@ header > p {
     max-width: 500px;
     padding-right: 10px;
     padding-left: 10px;
-    margin-bottom: 30px;
+    padding-bottom: 50px;
     margin: auto;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.411);
 }
@@ -103,6 +103,8 @@ main h2 {
      font-family: var(--fonte-titulos2);
      font-size: 1.7em;
      background-image: linear-gradient(to right, var(--cor7), transparent);
+     padding-bottom: 5px;
+     margin-top: 8px;
 }
 
 main img {
@@ -159,6 +161,7 @@ figure {
     padding: 20px;
     padding-bottom: 58%;
     position: relative;
+    margin-top: 19px
   }
 
   div.video > iframe {
