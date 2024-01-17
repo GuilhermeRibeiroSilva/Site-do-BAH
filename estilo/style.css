@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap');
+
+*{
+margin: 0px;
+padding: 0px;
+}
+
+:root{
+    --cor0: #F23545;
+    --cor1: #0477BF;
+    --cor2: #F2C572;
+    --cor3: #F2F2F2;
+    --cor4: #0D0D0D;
+    --cor5: #D9043D;
+    --cor6: #1243A6;
+    --cor7: #032859;
+
+    --fonte-padrao: Arial,Verdana,Helvetica, sans-serif;
+    --fonte-titulo: 'Bebas Neue', sans-serif;
+    --fonte-titulos2: 'IM Fell Great Primer SC', serif;
+    --fonte-texto: 'Heebo', sans-serif;
+}
+
+body {
+    background-color: #ec4c59;
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor7), var(--cor6));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    color: var(--cor2);
+    font-family: var(--fonte-titulo);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.411);
+}
+
+header > p {
+    color: var(--cor2);
+    font-size: 1.2em;
+    font-family: var(--fonte-texto);
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.411);
+}
+
+nav {
+    background-color: var(--cor6);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.336);
+}
+
+nav > a{
+    color: var(--cor0);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor1);
+    color: var(--cor2);
+}
+
+main {
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: var(--cor1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    color: var(--cor5);
+    font-family: var(--fonte-titulos2);
+    font-weight: bolder;
+    font-size: 2em;
+    background-image: linear-gradient(to right, var(--cor7), transparent);
+}
+ 
+main h2 {
+    color: var(--cor5);
+     font-family: var(--fonte-titulos2);
+     font-size: 1.7em;
+     background-image: linear-gradient(to right, var(--cor7), transparent);
+}
+
+main img {
+   width: 100%;
+}
+
+main p {
+    color: var(--cor3);
+    font-family: var(--fonte-texto);
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong {
+    color: var(--cor7);
+    font-weight: bold;
+    background-color: #eb1527cc;
+    padding: 2px 6px;
+}
+
+#cne {
+    width: auto;
+    margin: auto;
+    display: block;
+}
+
+#br {
+  width: auto;
+  margin: auto;
+  display: block;
+}
+
+#baia {
+    width: auto;
+    margin: auto;
+    display: block;
+}
+
+figure {
+    color: var(--cor3);
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 210px;
+    margin: auto;
+  }
+
+  div.video {
+    background-color: var(--cor7);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+  }
+
+  div.video > iframe {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+  }
+
+  aside {
+    background-color: var(--cor0);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.61);
+  }
+
+  aside > h3 {
+    background-color: var(--cor7);
+    color: var(--cor3);
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  aside > ul {
+    margin: 15px;
+    list-style-type: '\26BD\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+  }
+
+  aside a {
+     text-decoration: none;
+     font-weight: bolder;
+     color: var(--cor7);
+  }
+
+  aside p {
+    color: var(--cor7);
+    font-weight: bolder;
+  }
+
+footer{
+    background-color: var(--cor7);
+    color: var(--cor2);
+    font-family: var(--fonte-texto);
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    color: var(--cor2);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor0);
+}
